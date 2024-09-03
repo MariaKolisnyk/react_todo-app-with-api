@@ -6,6 +6,4 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import './styles/index.scss';
 import { App } from './App';
 
-/* eslint-disable*/
 createRoot(document.getElementById('root') as HTMLDivElement).render(<App />);
-/* eslint-enable*/

@@ -20,6 +20,9 @@ import { Footer } from './components/Footer';
 import { Error } from './components/Error/Error';
 import React from 'react';
 
+
+
+
 function getVisibleToDos(newTodos: Todo[], newStatus: Status) {
   switch (newStatus) {
     case Status.Active:
@@ -113,6 +116,7 @@ export const App: React.FC = () => {
     onSuccess?: (res: Todo) => void,
     onFail?: () => void,
   ) => {
+
     return updateToDo(id, updatedToDo)
       .then(res => {
         setTodos(state =>
